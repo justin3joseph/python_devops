@@ -1,23 +1,21 @@
-# Lab 02 — Linux Environment Inspector
 
-## Objective
-Use `os`, `sys` and `platform` to inspect a Linux system.
 
-## Tasks
-1. Print the current directory.
-2. List files in the current directory.
-3. Display `HOME`, `USER` and `PATH`.
-4. Display OS and kernel information.
-5. Accept an optional directory from `sys.argv`.
-6. Report whether the directory exists.
+## Classroom Practice Session
 
-## Example
-```bash
-python system_inspector.py /var/log
-```
+### Practice 1 — Guided
+Use `os.getcwd()` and `os.listdir()` to inspect the current directory. Repeat with `/tmp` and `/var/log`.
 
-## Challenge
-Create a directory called `devops_lab` only if it does not already exist.
+### Practice 2 — Environment Variables
+Print `HOME`, `USER`, `SHELL` and `PATH`. Discuss why credentials should not be stored in source code.
 
-## Expected Result
-The script identifies the selected directory and environment details without crashing when a directory is missing.
+### Practice 3 — Directory Automation
+Create `devops_lab/logs`, `backup` and `reports` using Python. Run the script twice safely.
+
+### Practice 4 — Command-Line Input
+Run `python inspect.py /var/log` and use `sys.argv` to inspect the supplied path.
+
+### Practice 5 — Platform
+Display OS, kernel, architecture, processor and Python version.
+
+### ★ Challenge
+Build `environment_inspector.py` accepting a directory argument and generating a complete environment report.
