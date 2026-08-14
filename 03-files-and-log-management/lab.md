@@ -1,24 +1,21 @@
-# Lab 03 — Automated Log Backup
 
-## Objective
-Create a script that finds log files and copies them into a backup directory.
 
-## Tasks
-1. Create `sample_logs`.
-2. Create three `.log` files.
-3. Use `pathlib` to locate them.
-4. Create `backup_logs`.
-5. Copy files using `shutil.copy2()`.
-6. Print each copied file.
-7. Verify the backup.
+## Classroom Practice Session
 
-## Challenge
-Add a file-size report and skip files that have already been backed up.
+### Practice 1 — Guided
+Create a sample `server.log`, read it line by line and count lines.
 
-## Safety
-Use sample files. Do not delete or modify production logs during this exercise.
+### Practice 2 — File Search
+Create `logs/` with `.log` and `.txt` files. Use `pathlib.glob()` to select only logs.
 
-## Questions
-1. Why is `pathlib` useful?
-2. What is the difference between copying and moving?
-3. Why should backup scripts verify the destination?
+### Practice 3 — Copy
+Create a backup directory and copy selected logs with `shutil.copy2()`.
+
+### Practice 4 — Operations
+Practice checking existence, size, rename, move and directory creation.
+
+### Practice 5 — Backup Scenario
+Build `backup_logs.py` that reports how many files were copied.
+
+### ★ Challenge
+Create a backup utility accepting source and destination paths. Students choose the file-selection rules and interface.
