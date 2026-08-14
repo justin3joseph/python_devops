@@ -1,40 +1,18 @@
-# Lab 01 — System Information Reporter
 
-## Objective
-Create a Python script that reports basic Linux and Python environment information.
 
-## Requirements
-- Python 3
-- Linux VM or WSL
+## Classroom Practice Session
 
-## Tasks
-1. Create `system_info.py`.
-2. Display hostname.
-3. Display OS/platform information.
-4. Display Python version.
-5. Display current working directory.
-6. Display current user.
-7. Format the output as a readable report.
+### Practice 1 — Guided
+Run the existing system-information example. Students change one line at a time to add hostname, OS, Python version, architecture and current directory.
 
-## Starter
-```python
-import os
-import platform
-import sys
+### Practice 2 — Pair Work
+Create `server_report.py` and add at least five system details. Compare output with another student.
 
-print("===== SYSTEM INFORMATION =====")
-print("Hostname :", platform.node())
-print("OS       :", platform.system())
-print("Release  :", platform.release())
-print("Python   :", sys.version.split()[0])
-print("Directory:", os.getcwd())
-print("User     :", os.environ.get("USER", "unknown"))
-```
+### Practice 3 — Save Output
+Modify the script to save the report to `server_report.txt`. Verify it with `cat`.
 
-## Extension
-Add CPU architecture and home directory.
+### Practice 4 — Scenario
+A support engineer needs a quick server report. Add three additional useful fields.
 
-## Questions
-1. Why is Python useful for DevOps?
-2. What is an environment variable?
-3. Why should operational scripts be repeatable?
+### ★ Challenge
+Create your own `devops_info.py` collecting at least eight useful system details and saving a report. No reference implementation is provided.
